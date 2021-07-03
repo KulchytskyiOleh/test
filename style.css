@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: Verdana, sans-serif;
+}
+
+body {
+  height: auto;
+  width: 70%;
+  margin: 0 auto;
+}
+.mainWrapper {
+  border: 2px solid #808080;
+}
+.headerTop {
+  margin: 15px 40px;
+}
+.headerTopNav {
+  margin: 10px 0px;
+  padding: 20px 0px;
+}
+.headerTopNavWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.headerTopNavWrapper a {
+  text-decoration: none;
+  color: #c0c0c0;
+  margin: 5px;
+}
+.headerBottomNav {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 30px;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+}
+.headerBottomNavImg {
+  justify-self: start;
+}
+.headerBottomNavWrapper {
+  justify-items: center;
+}
+.headerBottomNavSearch {
+  justify-self: end;
+  align-self: center;
+}
+.headerBottomNavWrapper a {
+  text-decoration: none;
+  color: #000000;
+  margin: 5px;
+}
+.mainSlider {
+  margin: 10px 0px;
+}
+.mainSlider img {
+  width: 100%;
+  height: 350px;
+}
+.mainServices {
+  padding: 0px 40px;
+}
+.mainServicesWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.mainServicesWrapper img {
+  width: 100%;
+}
+.additionalServices {
+  display: grid;
+  padding: 0px 40px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.additionalServicesLeft {
+  display: grid;
+  grid-gap: 10px;
+}
+.additionalServicesRight {
+  display: grid;
+  grid-gap: 10px;
+}
+.additionalServices img {
+  width: 100%;
+  height: auto;
+}
+.additionalServices a {
+  text-decoration: none;
+  color: #87cefa;
+}
+.mainNews {
+  padding: 0px 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 20px;
+  margin: 40px 0px;
+}
+.mainNews img {
+  width: 100%;
+  height: 100%;
+}
+.newsContentText {
+  display: grid;
+  grid-auto-flow: column;
+  font-family: sans-serif;
+  border-top: 2px solid silver;
+  justify-content: start;
+  padding-top: 10px;
+  grid-gap: 10px;
+}
+.newsContentText p {
+  margin: 5px 0px;
+}
+.mainNewsContentRightSlogan {
+  margin-bottom: 10px;
+}
+.mainNewsContentRightSlogan > h2 {
+  font-style: italic;
+  font-family: sans-serif;
+}
+.mainNewsContentRight > h3 {
+  margin: 10px 0px;
+}
+.typeOfPost {
+  color: #0000cd;
+  font-weight: 600;
+}
+.mainNewsContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px 10px;
+}
+.newsContentBtn {
+  display: grid;
+  justify-content: end;
+}
+.newsContentBtn button {
+  background-color: #00b5d6;
+  color: #fdfefe;
+  padding: 10px 45px;
+  border: none;
+}
+.callToUs {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 40px;
+  padding: 40px;
+  color: #0967a5;
+  background-color: #f1f5f9;
+  margin-bottom: 40px;
+}
+.callToUs h2 {
+  font-style: italic;
+}
+.callToUs button {
+  border: none;
+  background-color: #00b5d6;
+  padding: 10px 60px;
+  color: #fdfefe;
+}
+footer {
+  display: grid;
+  background-color: #0065a1;
+  color: #ffffff;
+}
+.footerWrapper {
+  margin: 0 40px;
+  display: grid;
+  grid-template-areas:
+    'footerTopSection'
+    'footerMiddleSection'
+    'footerBottomSection';
+  grid-template-rows: 0.2fr 0.6fr 0.2fr;
+  grid-gap: 20px;
+}
+.footerTopSection {
+  display: grid;
+  grid-area: footerTopSection;
+  margin-top: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  padding: 20px 0px;
+  border-bottom: 2px solid #4c92bd;
+}
+.footerTopSectionRight {
+  justify-self: end;
+}
+.footerTopSectionRight i {
+  margin-left: 15px;
+}
+.footerMiddleSection {
+  grid-area: footerMiddleSection;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 10px;
+  margin: 10px 20px;
+}
+.footerMiddleSection li {
+  margin-bottom: 5px;
+}
+.footerMiddleSection h3 {
+  color: #5d92b8;
+  margin-bottom: 15px;
+}
+.footerBottomSection {
+  display: grid;
+  grid-area: footerBottomSection;
+  border-top: 2px solid #4c92bd;
+  grid-template-areas: 'footerBottomSectionLeft footerBottomSectionRight';
+  grid-gap: 20px 10px;
+  justify-content: space-between;
+  margin: 20px 0px;
+  padding-top: 20px;
+}
+.footerBottomSectionLeft {
+  grid-area: footerBottomSectionLeft;
+  justify-self: start;
+}
+.footerBottomSectionRight {
+  display: grid;
+  grid-area: footerBottomSectionRight;
+  grid-auto-flow: column;
+  grid-gap: 0px 10px;
+  justify-self: end;
+  align-content: center;
+}
+.footerBottomSectionRight a {
+  font-size: 14px;
+  color: #fffafa;
+  align-self: center;
+  justify-self: center;
+}
