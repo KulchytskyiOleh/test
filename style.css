@@ -5,7 +5,12 @@
   list-style-type: none;
   font-family: Verdana, sans-serif;
 }
-
+:root{
+  --test:red
+}
+.green{
+  --test:green
+}
 body {
   height: auto;
   width: 70%;
@@ -111,7 +116,7 @@ body {
   display: grid;
   grid-auto-flow: column;
   font-family: sans-serif;
-  border-top: 2px solid silver;
+  border-top: 2px solid var(--test);
   justify-content: start;
   padding-top: 10px;
   grid-gap: 10px;
